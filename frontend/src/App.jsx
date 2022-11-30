@@ -4,11 +4,13 @@ import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div>
       <Router>
+        <Navbar />
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/Shop' exact element={<Shop />} />
