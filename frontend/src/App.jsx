@@ -4,13 +4,17 @@ import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Navbar from './components/Navbar';
+import Navbar1 from './components/Navbar1';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './components/Footer';
+import Announcement from './components/Announcement';
 
 function App() {
   return (
     <div>
       <Router>
-        <Navbar />
+        <Announcement />
+        <Navbar1 />
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/Shop' exact element={<Shop />} />
@@ -18,6 +22,7 @@ function App() {
           <Route path='/Signup' exact element={<Signup />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   )
 }
